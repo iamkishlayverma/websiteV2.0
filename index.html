@@ -8,11 +8,14 @@
     <meta name="author" content="">
     <link rel="icon" href="img/logo3.jpg">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>My Website</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js">
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -43,7 +46,11 @@
                             Contact
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Github</a>
+                            <a class="dropdown-item" href="Swal(
+                                'Good job!',
+                                'You clicked the button!',
+                                'success'
+                              )">Github</a>
                             <a class="dropdown-item" href="#">Linkedin</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Facebook</a>
@@ -56,12 +63,17 @@
 
     <main role="main">
 
+        <section>
+
+        </section>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
+
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="img/img_parallax7.jpg" alt="First slide">
@@ -73,6 +85,7 @@
                     <img class="d-block w-100" src="img/img_parallax4.jpg" alt="Third slide">
                 </div>
             </div>
+
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -81,123 +94,172 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+            <div class="main-text hidden-xs">
+                <div class="col-md-12 text-center">
+                    <h1 class="featurette-heading">Welcome to My Website</h1>
+                    <img class="profilePic" src="img/img_kv.png" alt="Kishlay Verma">
+                    <h1 class="featurette-heading">Kishlay Verma</h1>
+                </div>
+            </div>
         </div>
 
 
-        <!-- Marketing messaging and featurettes
-      ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-
-        <div class="container marketing">
-
-            <!-- <hr class="featurette-divider"> -->
-
-            <div class="row featurette">
-                <div class="col-sm-14">
-                    <h2 class="featurette-heading">Something about me...</h2>
-                    <p class="lead">I pursued my B.Tech in Information Technology from Indian Institute of Engineering
-                        Science and
-                        Technology,
-                        Shibpur.
-                        I have in-depth knowledge of Object Oriented Programming, Algorithms and Data Structures along
-                        with
-                        their
-                        proper implementation and have
-                        actively participated in various Competitive Programming contests.
-                    </p>
-                    <p class="lead">
-                        I want to work, code, learn and develop in an environment which promotes
-                        creative and innovative thinking. I am a technology enthusiast who loves to learn new
-                        technologies.
-                        I
-                        believe in setting and achieving both long and short term goals tirelessly. I harbour strong
-                        motivation
-                        to
-                        perform at the job assigned to me and for any situation I practice the saying: "Never Give Up".
-                        <ul class="lead">
-                            <li>Determined</li>
-                            <li>Strong Coding Skills</li>
-                            <li>Strong Planning capability</li>
-                            <li>Extremely Curious</li>
-                            <li>Learning agility</li>
-                            <li>Hardworking</li>
-                            <li>Patience</li>
-                            <li>Quick learner</li>
-                        </ul>
-                    </p>
-                </div>
-                <!-- <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                </div> -->
+        <div class="row featurette" id="aboutSection">
+            <div class="col-md-14">
+                <h2 class="featurette-heading">Something about me...</h2>
+                <p class="lead">I pursued my B.Tech in Information Technology from Indian Institute of Engineering
+                    Science and
+                    Technology,
+                    Shibpur.
+                    I have in-depth knowledge of Object Oriented Programming, Algorithms and Data Structures along
+                    with
+                    their
+                    proper implementation and have
+                    actively participated in various Competitive Programming contests.
+                </p>
+                <p class="lead">
+                    I want to work, code, learn and develop in an environment which promotes
+                    creative and innovative thinking. I am a technology enthusiast who loves to learn new
+                    technologies.
+                    I
+                    believe in setting and achieving both long and short term goals tirelessly. I harbour strong
+                    motivation
+                    to
+                    perform at the job assigned to me and for any situation I practice the saying: "Never Give Up".
+                    <ul class="lead">
+                        <li>Determined</li>
+                        <li>Strong Coding Skills</li>
+                        <li>Strong Planning capability</li>
+                        <li>Extremely Curious</li>
+                        <li>Learning agility</li>
+                        <li>Hardworking</li>
+                        <li>Patience</li>
+                        <li>Quick learner</li>
+                    </ul>
+                </p>
             </div>
 
-            <hr class="featurette-divider">
-
-            <!-- Three columns of text below the carousel -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <img class="rounded-circle" src="img/project.jpeg"
-                        alt="Generic placeholder image" width="140" height="140">
-                        <h2>Projects</h2>
-                        <p>
-                            <ol>
-                                <li>Remote User Authentication using mutual trust and biometric details</li>
-                                <li>Efficient watermarking technique for Big data in JSON format</li>
-                                <li>Deconvolution of Directed Networks</li>
-                            </ol>
-                        </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img class="rounded-circle" src="img/skills.jpg"
-                        alt="Generic placeholder image" width="140" height="140">
-                        <h2>Skills</h2>
-                        <p>
-                            <ul>
-                                <li>Language: C, Core Java</li>
-                                <li>Framework: Spring MVC, Struts, Maven, Hadoop</li>
-                                <li>Platform: Linux, Windows</li>
-                                <li>Core Subjects: Algorithms, data Structures, Operating Systems</li>
-                                <li>Technology: Big data, Machine Learning</li>
-                            </ul>
-                        </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img class="rounded-circle" src="img/hobbies.jpg"
-                        alt="Generic placeholder image" width="140" height="140">
-                        <h2>Hobbies</h2>
-                        <p>
-                            <ul>
-                                <li>Photography</li>
-                                <li>Travelling</li>
-                                <li>TV series</li>
-                                <li>Computer games</li>
-                            </ul>
-                        </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
+            <div class="projects">
 
 
-            <!-- START THE FEATURETTES -->
+                <div class="container marketing">
+                    <hr class="featurette-divider">
+                    <h2 class="featurette-heading">Projects and others...</h2>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img class="rounded-circle" src="img/project.jpeg" alt="Generic placeholder image" width="140"
+                                height="140">
+                            <h2>Projects</h2>
+                            <p>
+                                <ol>
+                                    <li>Remote User Authentication using mutual trust and biometric details</li>
+                                    <li>Efficient watermarking technique for Big data in JSON format</li>
+                                    <li>Deconvolution of Directed Networks</li>
+                                </ol>
+                            </p>
+                            <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+                        </div>
+                        <div class="col-lg-4">
+                            <img class="rounded-circle" src="img/skills.jpg" alt="Generic placeholder image" width="140"
+                                height="140">
+                            <h2>Skills</h2>
+                            <p>
+                                <ul>
+                                    <li>Language: C, Core Java</li>
+                                    <li>Framework: Spring MVC, Struts, Maven, Hadoop</li>
+                                    <li>Platform: Linux, Windows</li>
+                                    <li>Core Subjects: Algorithms, data Structures, Operating Systems</li>
+                                    <li>Technology: Big data, Machine Learning</li>
+                                </ul>
+                            </p>
+                            <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+                        </div>
+                        <div class="col-lg-4">
+                            <img class="rounded-circle" src="img/hobbies.jpg" alt="Generic placeholder image" width="140"
+                                height="140">
+                            <h2>Hobbies</h2>
+                            <p>
+                                <ul>
+                                    <li>Photography</li>
+                                    <li>Travelling</li>
+                                    <li>TV series</li>
+                                    <li>Computer games</li>
+                                </ul>
+                            </p>
+                            <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+                        </div>
+                    </div>
+
+
+                    <!-- START THE FEATURETTES -->
 
 
 
-            <hr class="featurette-divider">
+                    <hr class="featurette-divider">
 
-                        <!-- /END THE FEATURETTES -->
+                </div>
+            </div>
+
+
+            <!-- /END THE FEATURETTES -->
 
         </div><!-- /.container -->
 
 
         <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <footer>
+            <section id="contact">
+                <h2 class="featurette-heading">Around the web...</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/kishlay.verma.5" target="_blank"><i class="fa fa-facebook-square"
+                                style="font-size:36px;color:indigo"></i>Facebook</a></li>
+                    <li><a href="https://in.linkedin.com/in/kishlayverma" target="_blank"><i class="fa fa-linkedin-square"
+                                style="font-size:36px;color:blue"></i>Linkedin</a></li>
+                    <li><a href="https://github.com/iamkishlayverma" target="_blank"><i class="fa fa-github" style="font-size:36px;color:black"></i>Github</a></li>
+                    <li><a href="https://www.instagram.com/iamkishlayverma/" target="_blank"><i class="fa fa-instagram"
+                                style="font-size:36px;color:palevioletred"></i>Instagram</a></li>
+                </ul>
+            </section>
+            <!--Grid row-->
+            <div class="gmap">
+
+                <!--Grid column-->
+                <div class="col-md-8 mb-4">
+
+                    <!--Card-->
+                    <div class="card card-cascade narrower">
+
+                        <!--Card image-->
+                        <div class="view view-cascade gradient-card-header blue-gradient">
+                            <h5 class="mb-0">Regular map</h5>
+                        </div>
+                        <!--/Card image-->
+
+                        <!--Card content-->
+                        <div class="card-body card-body-cascade text-center">
+
+                            <!--Google map-->
+                            <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
+                                <iframe src="https://maps.google.com/maps?q=bangalore&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
         </footer>
     </main>
 
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
